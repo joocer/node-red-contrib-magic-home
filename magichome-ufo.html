@@ -1,0 +1,45 @@
+<script type="text/javascript">
+    RED.nodes.registerType('MagicHome UFO', {
+        category: 'SMART Home',
+        color: '#4793FA',
+        defaults: {
+            name: { value: "" },
+            ip: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "ufo.png",
+        align: 'right',
+        label: function () {
+            return this.name || "MagicHome UFO";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="MagicHome UFO">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-ip-address"><i class="icon-tag"></i> IP Address</label>
+        <input type="text" id="node-input-ip" placeholder="0.0.0.0">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="MagicHome UFO">
+    <p>Control and MagicHome UFO LED Controller</p>
+
+    <h3>Inputs</h3>
+    <p>Changes the light state based on the passed in <code>msg.payload</code> values of:</p>
+    <dl class="message-properties">
+        <dt>on<span class="property-type">boolean</span></dt>
+        <dd>True to turn on the LEDs, false to turn it off.</dd>
+
+        <dt>brightness<span class="property-type">0..100</span></dt>
+        <dd>Set the brightness of the LEDs, note lights must be on for this to have an effect</dd>
+    </dl>
+
+    <h3>Example</h3>
+    <code>msg.payload = { "on": true, "brightness": 50 }</code>
+</script>
