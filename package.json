@@ -1,12 +1,12 @@
 {
   "name": "node-red-contrib-magichome",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "Magic Home LED controller",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "joocer",
+  "author": "@joocer",
   "license": "SEE LICENCE FILE",
   "keywords": [
     "node-red",
@@ -20,8 +20,5 @@
     "nodes": {
       "MagicHome UFO": "magichome-ufo.js"
     }
-  },
-  "devDependencies": {
-    "eslint-config-google": "^0.9.1"
   }
 }

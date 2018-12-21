@@ -1,3 +1,22 @@
+1.4.0 29-SEP-2018 (@joocer)
+- Added support for Controller units with RGBWW configuration
+
+1.3.3 22-JUN-2018 (@joocer)
+- Added 'color' function
+
+1.3.2 22-JUN-2018 (@joocer)
+- Node status shows reported color values
+
+1.3.1 20-JUN-2018 (@joocer)
+- Corrected an issue with the 'blink' and 'toggle' commands not leaving lights in correct state
+- Decreased poll frequency from 5 seconds to 10 seconds
+- Increased missed heard beats to 6 (no response for 1 min)
+
+1.3.0 20-MAY-2018 (@joocer)
+- Reports when connection has been lost (2 missed heart beats)
+- Added 'toggle' function
+- Added 'blink' function
+
 1.2.0 03-MAY-2018 (@joocer)
 - BUXFIX: state continued to refresh after the node was removed
 - Added brightness setting to input, output and status
